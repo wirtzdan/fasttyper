@@ -25,6 +25,14 @@ module.exports = {
         tailwind: true,
         purgeOnly: [`src/css/style.css`]
       }
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Press Start 2P"]
+        }
+      }
     }
   ]
 };
