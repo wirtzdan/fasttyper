@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 function IndexPage() {
-  const STARTING_TIME = 20;
+  const STARTING_TIME = 10;
 
   const [text, setText] = useState("");
   const [timeRemaining, setTimeRemaining] = useState(STARTING_TIME);
