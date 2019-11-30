@@ -1,0 +1,24 @@
+.font-typer {
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    @apply bg-gray-900 text-green-500 text-lg font-typer text-center;
+}
+
+h1 {
+    @apply text-2xl leading-tight;
+}
+
+textarea {
+    @apply bg-gray-800 h-48 rounded;
+}
+
+button {
+    @apply bg-green-500 text-white px-6 py-4 mx-auto rounded uppercase;
+}
