@@ -35,7 +35,7 @@ a {
 }
 
 a:hover {
-  @apply text-gray-200;
+  @apply text-blue-800;
 }
 
 .grain-bg {

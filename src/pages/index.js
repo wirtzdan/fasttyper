@@ -48,7 +48,7 @@ function IndexPage() {
 
   return (
     <Layout>
-      <SEO title="Test how fast you type" />
+      <SEO title="Test how fast you" />
       <h1 className="uppercase ">How fast can you type?</h1>
       <textarea
         onChange={handleChange}
