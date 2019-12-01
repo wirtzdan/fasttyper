@@ -48,13 +48,13 @@ function IndexPage() {
 
   return (
     <Layout>
-      <SEO title="FastTyper" />
+      <SEO title="Test how fast you type" />
       <h1 className="uppercase ">How fast can you type?</h1>
       <textarea
         onChange={handleChange}
         value={text}
         disabled={!isTimeRunning}
-        className="p-4 mt-12 text-sm outline-none resize-none disabled:opacity-50"
+        className="p-4 mt-12 text-sm outline-none resize-none disabled:opacity-50 disabled:cursor-not-allowed"
       />{" "}
       <h4 className="mt-2">Time remaining: {timeRemaining}</h4>
       <button

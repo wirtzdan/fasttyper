@@ -2,12 +2,16 @@
   font-family: "Press Start 2P", cursive;
 }
 
+.-z-99 {
+  z-index: -99;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
-  @apply bg-gray-900 text-green-500 text-lg font-typer text-center;
+  @apply bg-neutral-900 text-green-500 text-lg font-typer text-center h-full;
 }
 
 h1 {
@@ -15,7 +19,7 @@ h1 {
 }
 
 textarea {
-  @apply bg-gray-800 h-48 rounded;
+  @apply bg-green-500 h-48 rounded text-white;
 }
 
 button {
@@ -28,4 +32,64 @@ a {
 
 a:hover {
   @apply text-gray-200;
+}
+
+.grain-bg {
+  height: 100vh;
+}
+
+.grain-bg:after {
+  animation: grain 8s steps(10) infinite;
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/dark_stripes.png");
+  content: "";
+  height: 300%;
+  left: -50%;
+  opacity: 1;
+  position: fixed;
+  top: -100%;
+  width: 300%;
+  z-index: -9999;
+}
+
+@keyframes grain {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  10% {
+    transform: translate(-5%, -10%);
+  }
+
+  20% {
+    transform: translate(-15%, 5%);
+  }
+
+  30% {
+    transform: translate(7%, -25%);
+  }
+
+  40% {
+    transform: translate(-5%, 25%);
+  }
+
+  50% {
+    transform: translate(-15%, 10%);
+  }
+
+  60% {
+    transform: translate(15%, 0%);
+  }
+
+  70% {
+    transform: translate(0%, 15%);
+  }
+
+  80% {
+    transform: translate(3%, 35%);
+  }
+
+  90% {
+    transform: translate(-10%, 10%);
+  }
 }
