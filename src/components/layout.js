@@ -7,6 +7,10 @@ function Layout({ children }) {
         <div className="absolute inset-0 -z-99 grain-bg"></div>
         {children}
       </main>
+      <span className="absolute inset-x-0 bottom-0 mb-2 text-gray-500 text-xxs md:text-xs md:mb-6">
+        Created in the <a href="https://scrimba.com/g/greact">React Bootcamp</a>{" "}
+        on <a href="https://scrimba.com/">Scrimba</a>
+      </span>
     </>
   );
 }
