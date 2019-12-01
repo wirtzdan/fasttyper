@@ -15,7 +15,7 @@
 @tailwind utilities;
 
 html {
-  @apply bg-neutral-900 text-green-500 text-lg font-typer text-center h-full;
+  @apply bg-neutral-900 text-green-500 text-lg font-typer text-center h-full relative;
 }
 
 h1 {
