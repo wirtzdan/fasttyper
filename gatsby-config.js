@@ -27,11 +27,14 @@ module.exports = {
       }
     },
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
-        google: {
-          families: ["Press Start 2P"]
-        }
+        fonts: [
+          {
+            family: `Press Start 2P`,
+            subsets: [`latin`]
+          }
+        ]
       }
     }
   ]
