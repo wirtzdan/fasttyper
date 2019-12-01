@@ -66,6 +66,10 @@ function IndexPage() {
         Start{" "}
       </button>{" "}
       <h2 className="mt-8">Word count: {wordCount}</h2>
+      <span className="absolute inset-x-0 bottom-0 mb-6 text-xs text-gray-500">
+        Created in the <a href="https://scrimba.com/g/greact">React Bootcamp</a>{" "}
+        on <a href="https://scrimba.com/">Scrimba</a>
+      </span>
     </Layout>
   );
 }
