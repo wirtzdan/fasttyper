@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -10,6 +10,7 @@ function IndexPage() {
   const [timeRemaining, setTimeRemaining] = useState(STARTING_TIME);
   const [isTimeRunning, setIsTimeRunning] = useState(false);
   const [wordCount, setWordCount] = useState(0);
+  const textBoxRef = useRef(null);
 
   function handleChange(e) {
     const { value } = e.target;
@@ -25,6 +26,8 @@ function IndexPage() {
     setIsTimeRunning(true);
     setTimeRemaining(STARTING_TIME);
     setText("");
+    textBoxRef.current.disabled = false;
+    textBoxRef.current.focus();
   }
 
   function endGame() {
@@ -54,6 +57,7 @@ function IndexPage() {
         onChange={handleChange}
         value={text}
         disabled={!isTimeRunning}
+        ref={textBoxRef}
         className="p-4 mt-12 text-sm outline-none resize-none disabled:opacity-50 disabled:cursor-not-allowed"
       />{" "}
       <h4 className="mt-2">Time remaining: {timeRemaining}</h4>
